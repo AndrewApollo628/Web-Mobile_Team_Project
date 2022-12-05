@@ -3,8 +3,24 @@
 }
 
 body {
-    background-color: #6E6E6E;
     opacity: 1;
+    background-position: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-size: cover;
+    position: relative;
+    margin-top: 0px;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+}
+
+.video-wrapper video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
 }
 
 /* Section Sizing */
@@ -12,38 +28,50 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 45px;
+    margin-block-start: 0.0em !important;
+    margin-block-end: 0.0em !important;
     justify-content: center;
 }
 
 /* Scrollable Text Box Styling */
 .auto-text-box{
     display: inline-block;
-    background-color: #383838;
-    border-radius: 80px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));    border-radius: 80px;
     margin-top: 80px;
     height: 800px;
     width: 60%;
     overflow: scroll;
 }
 
-h1, h2, p {
+h1, h2, h3 {
     color: white;
     font-size: 40px;
     font-family: sans-serif;
     padding-bottom: 5px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
 }
 
 /* Auto Image Box Styling */
 .auto-img-box{
     display: inline-block;
-    background-color: #383838;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));    margin-left: 10px;
     border-radius: 80px;
     margin-top: 80px;
     height: 800px;
-    width: 35%;
-}
+    width: calc(39% - 10px)}
 
 /* Image Styling */
 .center {
@@ -57,11 +85,11 @@ h1, h2, p {
 
 /* Footer Styling */
 #footer {
-    background-color: #383838;
-    margin-top: 120px;
-    bottom: 15px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));   
+    margin-top: 200px;
+    margin-bottom: 50px;
     border-radius: 80px;
-    height: 100px;
+    min-height: 100px;
 }
 
 #footer ul, li, h3, h4 {

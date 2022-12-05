@@ -1,7 +1,7 @@
 /* Nav Layout and Styling */
 .nav-links {
     align-content: center;
-    background: #383838;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     border-radius: 80px;
     padding: 10px;
 }
