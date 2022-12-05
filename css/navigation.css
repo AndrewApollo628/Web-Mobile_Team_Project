@@ -19,7 +19,7 @@
 .nav-links ul li a{
     color: white;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 30px;
     font-family: sans-serif;
 }
 
@@ -51,6 +51,6 @@
 /* Media Query */
 @media screen and (max-width: 800px) {
     .nav-links ul li a{
-        font-size: 25px;
+        font-size: 20px;
     }
 }

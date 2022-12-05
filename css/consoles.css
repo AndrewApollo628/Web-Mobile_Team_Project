@@ -5,7 +5,7 @@
 body {
     opacity: 1;
     background-position: center;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-image: linear-gradient(rgba(4, 9, 30, 0.884),rgba(4,9,30,0.7));
     background-size: cover;
     position: relative;
     margin-top: 0px;
@@ -41,6 +41,7 @@ body {
     height: 800px;
     width: 60%;
     overflow: scroll;
+    -webkit-scrollbar: none;
 }
 
 h1, h2, h3 {
@@ -54,9 +55,13 @@ h1, h2, h3 {
     padding-top: 50px;
 }
 
+h2, h3 {
+    padding-top: 25px;
+}
+
 p {
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     font-family: sans-serif;
     padding-bottom: 5px;
     padding-left: 50px;
@@ -71,31 +76,34 @@ p {
     border-radius: 80px;
     margin-top: 80px;
     height: 800px;
-    width: calc(39% - 10px)}
+    width: calc(39% - 10px)
+}
 
 /* Image Styling */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    width: 50%;
+    margin-top: 50px;
+    max-width: auto;
+    max-height: 500px;
 }
 
 
 /* Footer Styling */
 #footer {
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));   
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 100px;
     border-radius: 80px;
     min-height: 100px;
 }
 
-#footer ul, li, h3, h4 {
+#footer ul, li, h4 {
     color: white;
+    align-content: center;
+    text-align: center;
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     font-family: sans-serif;
     padding-bottom: 5px;
     padding-left: 50px;
@@ -103,6 +111,36 @@ p {
 }
 
 /* Media Query */
+@media screen and (max-width: 800px) {
+    .auto-text-box{
+        display: block;
+        height: 400px;
+        width: 100%;
+    }
+
+    .auto-text-box p {
+        font-size: 20px;
+    }
+
+    .auto-img-box h1{
+       font-size: 25px;
+    }
+    .auto-text-box h2 {
+        font-size: 20px;
+    }
+
+    .auto-img-box{
+        display: block;
+        height: 400px;
+        width: 100%;
+    }
+    
+    .center{
+        max-height: 375px;
+        max-width: fit-content;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .auto-text-box{
         display: block;
@@ -113,6 +151,11 @@ p {
         display: block;
         height: 400px;
         width: 100%;
+    }
+    
+    .center{
+        max-height: 375px;
+        max-width: fit-content;
     }
 }
 
