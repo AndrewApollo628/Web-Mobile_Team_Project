@@ -41,7 +41,7 @@ body {
 .auto-text-box{
     display: inline-block;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));    border-radius: 80px;
-    margin-top: 80px;
+    margin-top: 50px;
     height: 800px;
     width: 60%;
     overflow: scroll;
@@ -80,7 +80,8 @@ p {
     border-radius: 80px;
     margin-top: 80px;
     height: 800px;
-    width: calc(39% - 10px)
+    width: calc(39% - 10px);
+    overflow: scroll;
 }
 
 /* Image Styling */
