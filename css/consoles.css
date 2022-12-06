@@ -33,6 +33,14 @@ body {
     justify-content: center;
 }
 
+#content ul{
+    display:grid;
+}
+
+#content li{
+    font-size: 30px;
+}
+
 #footer {
     margin-top: 100px;
 }
